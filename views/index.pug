@@ -1,0 +1,660 @@
+doctype html
+head
+  title GURU Able - Free Lite Admin Template
+  // HTML5 Shim and Respond.js IE9 support of HTML5 elements and media queries
+  // WARNING: Respond.js doesn't work if you view the page via file://
+  //if lt IE 9
+    script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+    script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
+  // Meta
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='description' content='CodedThemes')
+  meta(name='keywords' content=' Admin , Responsive, Landing, Bootstrap, App, Template, Mobile, iOS, Android, apple, creative app')
+  meta(name='author' content='CodedThemes')
+  // Favicon icon
+  link(rel='icon' href='assets/images/favicon.ico' type='image/x-icon')
+  // Google font
+  link(href='https://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet')
+  // Required Fremwork
+  link(rel='stylesheet' type='text/css' href='assets/css/bootstrap/css/bootstrap.min.css')
+  // themify-icons line icon
+  link(rel='stylesheet' type='text/css' href='assets/icon/themify-icons/themify-icons.css')
+  // ico font
+  link(rel='stylesheet' type='text/css' href='assets/icon/icofont/css/icofont.css')
+  // Style.css
+  link(rel='stylesheet' type='text/css' href='assets/css/style.css')
+  link(rel='stylesheet' type='text/css' href='assets/css/jquery.mCustomScrollbar.css')
+// Pre-loader start
+.theme-loader
+  .ball-scale
+    .contain
+      .ring
+        .frame
+      .ring
+        .frame
+      .ring
+        .frame
+      .ring
+        .frame
+      .ring
+        .frame
+      .ring
+        .frame
+      .ring
+        .frame
+      .ring
+        .frame
+      .ring
+        .frame
+      .ring
+        .frame
+// Pre-loader end
+#pcoded.pcoded
+  .pcoded-overlay-box
+  .pcoded-container.navbar-wrapper
+    nav.navbar.header-navbar.pcoded-header
+      .navbar-wrapper
+        .navbar-logo
+          a#mobile-collapse.mobile-menu(href='#!')
+            i.ti-menu
+          a.mobile-search.morphsearch-search(href='#')
+            i.ti-search
+          a(href='index.html')
+            img.img-fluid(src='assets/images/logo.png' alt='Theme-Logo')
+          a.mobile-options
+            i.ti-more
+        .navbar-container.container-fluid
+          ul.nav-left
+            li
+              .sidebar_toggle
+                a(href='javascript:void(0)')
+                  i.ti-menu
+            li
+              a(href='#!' onclick='javascript:toggleFullScreen()')
+                i.ti-fullscreen
+          ul.nav-right
+            li.header-notification
+              a(href='#!')
+                i.ti-bell
+                span.badge.bg-c-pink
+              ul.show-notification
+                li
+                  h6 Notifications
+                  label.label.label-danger New
+                li
+                  .media
+                    img.d-flex.align-self-center.img-radius(src='assets/images/avatar-4.jpg' alt='Generic placeholder image')
+                    .media-body
+                      h5.notification-user John Doe
+                      p.notification-msg Lorem ipsum dolor sit amet, consectetuer elit.
+                      span.notification-time 30 minutes ago
+                li
+                  .media
+                    img.d-flex.align-self-center.img-radius(src='assets/images/avatar-3.jpg' alt='Generic placeholder image')
+                    .media-body
+                      h5.notification-user Joseph William
+                      p.notification-msg Lorem ipsum dolor sit amet, consectetuer elit.
+                      span.notification-time 30 minutes ago
+                li
+                  .media
+                    img.d-flex.align-self-center.img-radius(src='assets/images/avatar-4.jpg' alt='Generic placeholder image')
+                    .media-body
+                      h5.notification-user Sara Soudein
+                      p.notification-msg Lorem ipsum dolor sit amet, consectetuer elit.
+                      span.notification-time 30 minutes ago
+            li.user-profile.header-notification
+              a(href='#!')
+                img.img-radius(src='assets/images/avatar-4.jpg' alt='User-Profile-Image')
+                span John Doe
+                i.ti-angle-down
+              ul.show-notification.profile-notification
+                li
+                  a(href='#!')
+                    i.ti-settings
+                    |  Settings
+                li
+                  a(href='#')
+                    i.ti-user
+                    |  Profile
+                li
+                  a(href='#')
+                    i.ti-email
+                    |  My Messages
+                li
+                  a(href='#')
+                    i.ti-lock
+                    |  Lock Screen
+                li
+                  a(href='auth-normal-sign-in.html')
+                    i.ti-layout-sidebar-left
+                    |  Logout
+    .pcoded-main-container
+      .pcoded-wrapper
+        nav.pcoded-navbar
+          .sidebar_toggle
+            a(href='#')
+              i.icon-close.icons
+          .pcoded-inner-navbar.main-menu
+            div
+              .main-menu-header
+                img.img-40.img-radius(src='assets/images/avatar-4.jpg' alt='User-Profile-Image')
+                .user-details
+                  span John Doe
+                  span#more-details
+                    | UX Designer
+                    i.ti-angle-down
+              .main-menu-content
+                ul
+                  li.more-details
+                    a(href='#')
+                      i.ti-user
+                      | View Profile
+                    a(href='#!')
+                      i.ti-settings
+                      | Settings
+                    a(href='auth-normal-sign-in.html')
+                      i.ti-layout-sidebar-left
+                      | Logout
+            .pcoded-search
+              span.searchbar-toggle
+              .pcoded-search-box
+                input(type='text' placeholder='Search')
+                span.search-icon
+                  i.ti-search(aria-hidden='true')
+            .pcoded-navigatio-lavel(data-i18n='nav.category.navigation') Layout
+            ul.pcoded-item.pcoded-left-item
+              li.active
+                a(href='index.html')
+                  span.pcoded-micon
+                    i.ti-home
+                    b D
+                  span.pcoded-mtext(data-i18n='nav.dash.main') Dashboard
+                  span.pcoded-mcaret
+              li.pcoded-hasmenu
+                a(href='javascript:void(0)')
+                  span.pcoded-micon
+                    i.ti-layout-grid2-alt
+                  span.pcoded-mtext(data-i18n='nav.basic-components.main') Components
+                  span.pcoded-mcaret
+                ul.pcoded-submenu
+                  li.
+                    a(href='accordion.html')
+                      span.pcoded-micon
+                        i.ti-angle-right
+                      span.pcoded-mtext(data-i18n='nav.basic-components.alert') Accordion
+                      span.pcoded-mcaret
+                  li.
+                    a(href='breadcrumb.html')
+                      span.pcoded-micon
+                        i.ti-angle-right
+                      span.pcoded-mtext(data-i18n='nav.basic-components.breadcrumbs') Breadcrumbs
+                      span.pcoded-mcaret
+                  li.
+                    a(href='button.html')
+                      span.pcoded-micon
+                        i.ti-angle-right
+                      span.pcoded-mtext(data-i18n='nav.basic-components.alert') Button
+                      span.pcoded-mcaret
+                  li.
+                    a(href='tabs.html')
+                      span.pcoded-micon
+                        i.ti-angle-right
+                      span.pcoded-mtext(data-i18n='nav.basic-components.breadcrumbs') Tabs
+                      span.pcoded-mcaret
+                  li.
+                    a(href='color.html')
+                      span.pcoded-micon
+                        i.ti-angle-right
+                      span.pcoded-mtext(data-i18n='nav.basic-components.alert') Color
+                      span.pcoded-mcaret
+                  li.
+                    a(href='label-badge.html')
+                      span.pcoded-micon
+                        i.ti-angle-right
+                      span.pcoded-mtext(data-i18n='nav.basic-components.breadcrumbs') Label Badge
+                      span.pcoded-mcaret
+                  li.
+                    a(href='tooltip.html')
+                      span.pcoded-micon
+                        i.ti-angle-right
+                      span.pcoded-mtext(data-i18n='nav.basic-components.alert') Tooltip
+                      span.pcoded-mcaret
+                  li.
+                    a(href='typography.html')
+                      span.pcoded-micon
+                        i.ti-angle-right
+                      span.pcoded-mtext(data-i18n='nav.basic-components.breadcrumbs') Typography
+                      span.pcoded-mcaret
+                  li.
+                    a(href='notification.html')
+                      span.pcoded-micon
+                        i.ti-angle-right
+                      span.pcoded-mtext(data-i18n='nav.basic-components.alert') Notification
+                      span.pcoded-mcaret
+                  li.
+                    a(href='icon-themify.html')
+                      span.pcoded-micon
+                        i.ti-angle-right
+                      span.pcoded-mtext(data-i18n='nav.basic-components.breadcrumbs') Icon
+                      span.pcoded-mcaret
+            .pcoded-navigatio-lavel(data-i18n='nav.category.forms') Forms &amp; Tables
+            ul.pcoded-item.pcoded-left-item
+              li
+                a(href='form-elements-component.html')
+                  span.pcoded-micon
+                    i.ti-layers
+                    b FC
+                  span.pcoded-mtext(data-i18n='nav.form-components.main') Form Components
+                  span.pcoded-mcaret
+              li
+                a(href='bs-basic-table.html')
+                  span.pcoded-micon
+                    i.ti-layers
+                    b FC
+                  span.pcoded-mtext(data-i18n='nav.form-components.main') Basic Table
+                  span.pcoded-mcaret
+            .pcoded-navigatio-lavel(data-i18n='nav.category.forms') Chart &amp; Maps
+            ul.pcoded-item.pcoded-left-item
+              li
+                a(href='chart.html')
+                  span.pcoded-micon
+                    i.ti-layers
+                    b FC
+                  span.pcoded-mtext(data-i18n='nav.form-components.main') Chart
+                  span.pcoded-mcaret
+              li
+                a(href='map-google.html')
+                  span.pcoded-micon
+                    i.ti-layers
+                    b FC
+                  span.pcoded-mtext(data-i18n='nav.form-components.main') Maps
+                  span.pcoded-mcaret
+              li.pcoded-hasmenu
+                a(href='javascript:void(0)')
+                  span.pcoded-micon
+                    i.ti-layout-grid2-alt
+                  span.pcoded-mtext(data-i18n='nav.basic-components.main') Pages
+                  span.pcoded-mcaret
+                ul.pcoded-submenu
+                  li.
+                    a(href='auth-normal-sign-in.html')
+                      span.pcoded-micon
+                        i.ti-angle-right
+                      span.pcoded-mtext(data-i18n='nav.basic-components.alert') Login
+                      span.pcoded-mcaret
+                  li.
+                    a(href='auth-sign-up.html')
+                      span.pcoded-micon
+                        i.ti-angle-right
+                      span.pcoded-mtext(data-i18n='nav.basic-components.breadcrumbs') Register
+                      span.pcoded-mcaret
+                  li.
+                    a(href='sample-page.html')
+                      span.pcoded-micon
+                        i.ti-angle-right
+                      span.pcoded-mtext(data-i18n='nav.basic-components.breadcrumbs') Sample Page
+                      span.pcoded-mcaret
+            .pcoded-navigatio-lavel(data-i18n='nav.category.other') Other
+            ul.pcoded-item.pcoded-left-item
+              li.pcoded-hasmenu
+                a(href='javascript:void(0)')
+                  span.pcoded-micon
+                    i.ti-direction-alt
+                    b M
+                  span.pcoded-mtext(data-i18n='nav.menu-levels.main') Menu Levels
+                  span.pcoded-mcaret
+                ul.pcoded-submenu
+                  li
+                    a(href='javascript:void(0)')
+                      span.pcoded-micon
+                        i.ti-angle-right
+                      span.pcoded-mtext(data-i18n='nav.menu-levels.menu-level-21') Menu Level 2.1
+                      span.pcoded-mcaret
+                  li.pcoded-hasmenu
+                    a(href='javascript:void(0)')
+                      span.pcoded-micon
+                        i.ti-direction-alt
+                      span.pcoded-mtext(data-i18n='nav.menu-levels.menu-level-22.main') Menu Level 2.2
+                      span.pcoded-mcaret
+                    ul.pcoded-submenu
+                      li
+                        a(href='javascript:void(0)')
+                          span.pcoded-micon
+                            i.ti-angle-right
+                          span.pcoded-mtext(data-i18n='nav.menu-levels.menu-level-22.menu-level-31') Menu Level 3.1
+                          span.pcoded-mcaret
+                  li
+                    a(href='javascript:void(0)')
+                      span.pcoded-micon
+                        i.ti-angle-right
+                      span.pcoded-mtext(data-i18n='nav.menu-levels.menu-level-23') Menu Level 2.3
+                      span.pcoded-mcaret
+        .pcoded-content
+          .pcoded-inner-content
+            .main-body
+              .page-wrapper
+                .page-body
+                  .row
+                    // card1 start
+                    .col-md-6.col-xl-3
+                      .card.widget-card-1
+                        .card-block-small
+                          i.icofont.icofont-pie-chart.bg-c-blue.card1-icon
+                          span.text-c-blue.f-w-600 Use space
+                          h4 49/50GB
+                          div
+                            span.f-left.m-t-10.text-muted
+                              i.text-c-blue.f-16.icofont.icofont-warning.m-r-10
+                              | Get more space
+                    // card1 end
+                    // card1 start
+                    .col-md-6.col-xl-3
+                      .card.widget-card-1
+                        .card-block-small
+                          i.icofont.icofont-ui-home.bg-c-pink.card1-icon
+                          span.text-c-pink.f-w-600 Revenue
+                          h4 $23,589
+                          div
+                            span.f-left.m-t-10.text-muted
+                              i.text-c-pink.f-16.icofont.icofont-calendar.m-r-10
+                              | Last 24 hours
+                    // card1 end
+                    // card1 start
+                    .col-md-6.col-xl-3
+                      .card.widget-card-1
+                        .card-block-small
+                          i.icofont.icofont-warning-alt.bg-c-green.card1-icon
+                          span.text-c-green.f-w-600 Fixed issue
+                          h4 45
+                          div
+                            span.f-left.m-t-10.text-muted
+                              i.text-c-green.f-16.icofont.icofont-tag.m-r-10
+                              | Tracked via microsoft
+                    // card1 end
+                    // card1 start
+                    .col-md-6.col-xl-3
+                      .card.widget-card-1
+                        .card-block-small
+                          i.icofont.icofont-social-twitter.bg-c-yellow.card1-icon
+                          span.text-c-yellow.f-w-600 Followers
+                          h4 +562
+                          div
+                            span.f-left.m-t-10.text-muted
+                              i.text-c-yellow.f-16.icofont.icofont-refresh.m-r-10
+                              | Just update
+                    // card1 end
+                    // Statestics Start
+                    .col-md-12.col-xl-8
+                      .card
+                        .card-header
+                          h5 Statestics
+                          .card-header-left
+                          .card-header-right
+                            ul.list-unstyled.card-option
+                              li
+                                i.icofont.icofont-simple-left
+                              li
+                                i.icofont.icofont-maximize.full-card
+                              li
+                                i.icofont.icofont-minus.minimize-card
+                              li
+                                i.icofont.icofont-refresh.reload-card
+                              li
+                                i.icofont.icofont-error.close-card
+                        .card-block
+                          #statestics-chart(style='height:517px;')
+                    .col-md-12.col-xl-4
+                      .card.fb-card
+                        .card-header
+                          i.icofont.icofont-social-facebook
+                          .d-inline-block
+                            h5 facebook
+                            span blog page timeline
+                        .card-block.text-center
+                          .row
+                            .col-6.b-r-default
+                              h2 23
+                              p.text-muted Active
+                            .col-6
+                              h2 23
+                              p.text-muted Comment
+                      .card.dribble-card
+                        .card-header
+                          i.icofont.icofont-social-dribbble
+                          .d-inline-block
+                            h5 dribble
+                            span Product page analysis
+                        .card-block.text-center
+                          .row
+                            .col-6.b-r-default
+                              h2 23
+                              p.text-muted Live
+                            .col-6
+                              h2 23
+                              p.text-muted Message
+                      .card.twitter-card
+                        .card-header
+                          i.icofont.icofont-social-twitter
+                          .d-inline-block
+                            h5 twitter
+                            span current new timeline
+                        .card-block.text-center
+                          .row
+                            .col-6.b-r-default
+                              h2 25
+                              p.text-muted new tweet
+                            .col-6
+                              h2 450+
+                              p.text-muted Follower
+                    // Email Sent End
+                    // Data widget start
+                    .col-md-12.col-xl-6
+                      .card.project-task
+                        .card-header
+                          .card-header-left
+                            h5 Time spent : project &amp; task
+                          .card-header-right
+                            ul.list-unstyled.card-option
+                              li
+                                i.icofont.icofont-simple-left
+                              li
+                                i.icofont.icofont-maximize.full-card
+                              li
+                                i.icofont.icofont-minus.minimize-card
+                              li
+                                i.icofont.icofont-refresh.reload-card
+                              li
+                                i.icofont.icofont-error.close-card
+                        .card-block.p-b-10
+                          .table-responsive
+                            table.table.table-hover
+                              thead
+                                tr
+                                  th Project &amp; Task
+                                  th Time Spents
+                              tbody
+                                tr
+                                  td
+                                    .task-contain
+                                      h6.bg-c-blue.d-inline-block.text-center U
+                                      p.d-inline-block.m-l-20 UI Design
+                                  td
+                                    p.d-inline-block.m-r-20 4 : 36
+                                    .progress.d-inline-block
+                                      .progress-bar.bg-c-blue(role='progressbar' aria-valuemin='0' aria-valuemax='100' style='width:80%')
+                                tr
+                                  td
+                                    .task-contain
+                                      h6.bg-c-pink.d-inline-block.text-center R
+                                      p.d-inline-block.m-l-20 Redesign Android App
+                                  td
+                                    p.d-inline-block.m-r-20 4 : 36
+                                    .progress.d-inline-block
+                                      .progress-bar.bg-c-pink(role='progressbar' aria-valuemin='0' aria-valuemax='100' style='width:60%')
+                                tr
+                                  td
+                                    .task-contain
+                                      h6.bg-c-yellow.d-inline-block.text-center L
+                                      p.d-inline-block.m-l-20 Logo Design
+                                  td
+                                    p.d-inline-block.m-r-20 4 : 36
+                                    .progress.d-inline-block
+                                      .progress-bar.bg-c-yellow(role='progressbar' aria-valuemin='0' aria-valuemax='100' style='width:50%')
+                                tr
+                                  td
+                                    .task-contain
+                                      h6.bg-c-green.d-inline-block.text-center A
+                                      p.d-inline-block.m-l-20 Appestia landing Page
+                                  td
+                                    p.d-inline-block.m-r-20 4 : 36
+                                    .progress.d-inline-block
+                                      .progress-bar.bg-c-green(role='progressbar' aria-valuemin='0' aria-valuemax='100' style='width:50%')
+                                tr
+                                  td
+                                    .task-contain
+                                      h6.bg-c-blue.d-inline-block.text-center L
+                                      p.d-inline-block.m-l-20 Logo Design
+                                  td
+                                    p.d-inline-block.m-r-20 4 : 36
+                                    .progress.d-inline-block
+                                      .progress-bar.bg-c-blue(role='progressbar' aria-valuemin='0' aria-valuemax='100' style='width:50%')
+                    .col-md-12.col-xl-6
+                      .card.add-task-card
+                        .card-header
+                          .card-header-left
+                            h5 To do list
+                          .card-header-right
+                            button.btn.btn-card.btn-primary Add task
+                        .card-block
+                          .to-do-list
+                            .checkbox-fade.fade-in-primary.d-block
+                              label.check-task.d-block
+                                input(type='checkbox' value='')
+                                span.cr
+                                  i.cr-icon.icofont.icofont-ui-check.txt-default
+                                span
+                                  h6
+                                    | Schedule Meeting with Compnes
+                                    span.label.bg-c-green.m-l-10.f-10 2 week
+                                .task-card-img.m-l-40
+                                  a(href='#!')
+                                    img.img-40(src='assets/images/avatar-2.jpg' data-toggle='tooltip' title='Lary Doe' alt='')
+                                  a(href='#!')
+                                    img.img-40.m-l-10(src='assets/images/avatar-3.jpg' data-toggle='tooltip' title='Alia' alt='')
+                          .to-do-list
+                            .checkbox-fade.fade-in-primary.d-block
+                              label.check-task.d-block
+                                input(type='checkbox' value='')
+                                span.cr
+                                  i.cr-icon.icofont.icofont-ui-check.txt-default
+                                span
+                                  h6 Meeting With HOD&apos;s and borad
+                                  p.text-muted.m-l-40 23 january 2003
+                          .to-do-list
+                            .checkbox-fade.fade-in-primary.d-block
+                              label.check-task.d-block
+                                input(type='checkbox' value='')
+                                span.cr
+                                  i.cr-icon.icofont.icofont-ui-check.txt-default
+                                span
+                                  h6
+                                    | Create template, admin with responsive
+                                    span.label.bg-c-pink.m-l-10 2 week
+                                .task-card-img.m-l-40
+                                  a(href='#!')
+                                    img.img-40(src='assets/images/avatar-2.jpg' data-toggle='tooltip' title='Alia' alt='')
+                                  a(href='#!')
+                                    img.img-40.m-l-10(src='assets/images/avatar-3.jpg' data-toggle='tooltip' title='Suzen' alt='')
+                                  a(href='#!')
+                                    img.img-40.m-l-10(src='assets/images/avatar-4.jpg' data-toggle='tooltip' title='Lary Doe' alt='')
+                                  a(href='#!')
+                                    img.img-40.m-l-10(src='assets/images/avatar-2.jpg' data-toggle='tooltip' title='Josephin Doe' alt='')
+                          .to-do-list
+                            .checkbox-fade.fade-in-primary.d-block
+                              label.check-task.d-block
+                                input(type='checkbox' value='')
+                                span.cr
+                                  i.cr-icon.icofont.icofont-ui-check.txt-default
+                                span
+                                  h6 Meeting With HOD&apos;s and borad
+                                  p.text-muted.m-l-40 23 january 2003
+                                .task-card-img.m-l-40
+                                  a(href='#!')
+                                    img.img-40(src='assets/images/avatar-2.jpg' data-toggle='tooltip' title='Lary Doe' alt='')
+                                  a(href='#!')
+                                    img.img-40.m-l-10(src='assets/images/avatar-3.jpg' data-toggle='tooltip' title='Alia' alt='')
+                                  a(href='#!')
+                                    img.img-40.m-l-10(src='assets/images/avatar-2.jpg' data-toggle='tooltip' title='Josephin Doe' alt='')
+                    // Data widget End
+              #styleSelector
+    .fixed-button
+      a.btn.btn-md.btn-primary(href='https://codedthemes.com/item/guru-able-admin-template/' target='_blank')
+        i.fa.fa-shopping-cart(aria-hidden='true')
+        |  Upgrade To Pro
+// Warning Section Starts
+// Older IE warning message
+//if lt IE 9
+  .ie-warning
+    h1 Warning!!
+    p
+      | You are using an outdated version of Internet Explorer, please upgrade
+      br
+      | to any of the following web browsers to access this website.
+    .iew-container
+      ul.iew-download
+        li
+          a(href='http://www.google.com/chrome/')
+            img(src='assets/images/browser/chrome.png' alt='Chrome')
+            div Chrome
+        li
+          a(href='https://www.mozilla.org/en-US/firefox/new/')
+            img(src='assets/images/browser/firefox.png' alt='Firefox')
+            div Firefox
+        li
+          a(href='http://www.opera.com')
+            img(src='assets/images/browser/opera.png' alt='Opera')
+            div Opera
+        li
+          a(href='https://www.apple.com/safari/')
+            img(src='assets/images/browser/safari.png' alt='Safari')
+            div Safari
+        li
+          a(href='http://windows.microsoft.com/en-us/internet-explorer/download-ie')
+            img(src='assets/images/browser/ie.png' alt='')
+            div IE (9 &amp; above)
+    p Sorry for the inconvenience!
+// Warning Section Ends
+// Required Jquery
+script(type='text/javascript' src='assets/js/jquery/jquery.min.js')
+script(type='text/javascript' src='assets/js/jquery-ui/jquery-ui.min.js')
+script(type='text/javascript' src='assets/js/popper.js/popper.min.js')
+script(type='text/javascript' src='assets/js/bootstrap/js/bootstrap.min.js')
+// jquery slimscroll js
+script(type='text/javascript' src='assets/js/jquery-slimscroll/jquery.slimscroll.js')
+// modernizr js
+script(type='text/javascript' src='assets/js/modernizr/modernizr.js')
+// am chart
+script(src='assets/pages/widget/amchart/amcharts.min.js')
+script(src='assets/pages/widget/amchart/serial.min.js')
+// Todo js
+script(type='text/javascript ' src='assets/pages/todo/todo.js ')
+// Custom js
+script(type='text/javascript' src='assets/pages/dashboard/custom-dashboard.js')
+script(type='text/javascript' src='assets/js/script.js')
+script(type='text/javascript ' src='assets/js/SmoothScroll.js')
+script(src='assets/js/pcoded.min.js')
+script(src='assets/js/demo-12.js')
+script(src='assets/js/jquery.mCustomScrollbar.concat.min.js')
+script.
+  var $window = $(window);
+  var nav = $('.fixed-button');
+  $window.scroll(function(){
+    if ($window.scrollTop() >= 200) {
+      nav.addClass('active');
+    }
+    else {
+      nav.removeClass('active');
+    }
+  });

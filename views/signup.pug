@@ -1,0 +1,58 @@
+doctype html
+head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible' content='ie=edge')
+    title #{title}
+    // Font Icon
+    link(rel='stylesheet' href='fonts/material-icon/css/material-design-iconic-font.min.css')
+    // Main css
+    link(rel='stylesheet' href='stylesheets/style.css')
+.main
+    // Sign up form
+    section.signup
+        .container
+            .signup-content
+                .signup-form
+                    h2.form-title Sign up
+                    .register-form
+                        .form-group
+                            label(for='fname')
+                                i.zmdi.zmdi-account.material-icons-name
+                            input#fname(type='text' name='fname' placeholder='First Name')
+                        .form-group
+                            label(for='lname')
+                                i.zmdi.zmdi-account.material-icons-name
+                            input#lname(type='text' name='lname' placeholder='Last Name')
+                        .form-group
+                            label(for='email')
+                                i.zmdi.zmdi-email
+                            input#email(type='email' name='email' placeholder='Your Email')
+                        .form-group
+                            label(for='pass')
+                                i.zmdi.zmdi-lock
+                            input#pass(type='password' name='pass' placeholder='Password')
+                        .form-group
+                            label(for='re-pass')
+                                i.zmdi.zmdi-lock-outline
+                            input#re_pass(type='password' name='re_pass' placeholder='Repeat your password')
+                        .form-group
+                            label(for='age')
+                                i.zmdi.zmdi-lock-outline
+                            input#age(type='number' name='age' placeholder='Age' max=120)
+                        .form-group
+                            input#agree-term.agree-term(type='checkbox' name='agree-term')
+                            label.label-agree-term(for='agree-term')
+                                span
+                                    span
+                                | I agree all statements in
+                                a.term-service(href='#') Terms of service
+                        .form-group.form-button
+                            button#signup.form-submit(name='signup' value='Register' onclick='signup();')
+                .signup-image
+                    figure
+                        img(src='images/signup-image.jpg' alt='sing up image')
+                    a.signup-image-link(href='/') I am already member
+// JS
+script(src='javascripts/jquery.min.js')
+script(src='javascripts/user.js')
